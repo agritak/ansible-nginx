@@ -5,7 +5,6 @@
     apt: 
         name: nginx 
 	state: latest
-	become: True
   - name: start nginx service
     service:
         name: nginx
