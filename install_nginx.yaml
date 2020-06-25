@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+  - name: install nginx and ensure it is at the latest version
+    apt: 
+        name: nginx
+        state: latest
+        become: True
+  - name: start nginx service
+    service:
+        name: nginx
+        state: started
