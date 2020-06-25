@@ -5,6 +5,8 @@
     apt: 
         name: nginx
         state: latest
+        become: True
+        become_method: sudo
   - name: start nginx service
     service:
         name: nginx
