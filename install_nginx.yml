@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   tasks:
   - name: install nginx and ensure it is at the latest version
     apt: 
