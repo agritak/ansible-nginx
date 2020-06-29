@@ -2,7 +2,7 @@
 - hosts: localhost
   become: yes
   become_method: sudo
-  tasks:
+- tasks:
   - name: install nginx and ensure it is at the latest version
     apt: 
         name: nginx
